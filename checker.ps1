@@ -4,8 +4,19 @@
 }
 $ErrorActionPreference = 'SilentlyContinue'
 
-$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $baseUrl = "https://github.com/misanteaa/checker/releases/download/v1.0"
+$scriptDir = Join-Path ([Environment]::GetFolderPath("Desktop")) "SWcheck"
+
+if (-not (Test-Path $scriptDir)) {
+    New-Item -ItemType Directory -Path $scriptDir -Force | Out-Null
+}
+
+$myPath = Join-Path $scriptDir "checker.ps1"
+if ($MyInvocation.MyCommand.Path -ne $myPath) {
+    Copy-Item -Path $MyInvocation.MyCommand.Path -Destination $myPath -Force
+    Start-Process powershell.exe -ArgumentList "-ExecutionPolicy Bypass -File `"$myPath`"" -Verb RunAs
+    exit
+}
 
 [Console]::BackgroundColor = 'Black'
 [Console]::ForegroundColor = 'White'
