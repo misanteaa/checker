@@ -9,11 +9,10 @@ $baseUrl = "https://github.com/misanteaa/checker/releases/download/v1.0"
 
 $tools = @(
     @{ Name = "Everything (Poisk fajlov)";              File = "everything.exe" },
-    @{ Name = "InjGen (Generator injekcij)";            File = "InjGen.exe" },
     @{ Name = "JournalTrace (Trassirovka NTFS)";        File = "JournalTrace.exe" },
     @{ Name = "LastActivityView (Poslednyaya aktivnost)"; File = "LastActivityView.exe" },
-    @{ Name = "MeowClientFucker";                       File = "MeowClientFucker (1).exe" },
-    @{ Name = "MeowDoomsdayFucker";                     File = "MeowDoomsdayFucker (1).exe" },
+    @{ Name = "MeowClientFucker";                       File = "MeowClientFucker.1.exe" },
+    @{ Name = "MeowDoomsdayFucker";                     File = "MeowDoomsdayFucker.1.exe" },
     @{ Name = "Process Hacker 2.39 (Monitoring)";      File = "processhacker-2.39-setup.exe" },
     @{ Name = "ShellBag Analyzer/Cleaner";              File = "shellbag_analyzer_cleaner.exe" },
     @{ Name = "USBDeview (USB ustrojstva)";             File = "USBDeview.exe" },
