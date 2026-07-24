@@ -64,7 +64,7 @@ function Download-Tools {
 function Show-Menu {
     Clear-Host
     Write-Host "========================================" -ForegroundColor Cyan
-    Write-Host "       sworld checker - Launcher Menu        " -ForegroundColor Cyan
+    Write-Host "       SWORLD checker - Launcher Menu        " -ForegroundColor Cyan
     Write-Host "========================================" -ForegroundColor Cyan
     Write-Host ""
     for ($i = 0; $i -lt $tools.Count; $i++) {
