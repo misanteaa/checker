@@ -7,6 +7,10 @@ $ErrorActionPreference = 'SilentlyContinue'
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $baseUrl = "https://github.com/misanteaa/checker/releases/download/v1.0"
 
+[Console]::BackgroundColor = 'Black'
+[Console]::ForegroundColor = 'White'
+Clear-Host
+
 $tools = @(
     @{ Name = "Everything (Poisk fajlov)";              File = "everything.exe" },
     @{ Name = "JournalTrace (Trassirovka NTFS)";        File = "JournalTrace.exe" },
